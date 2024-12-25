@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://cgymmy/al-folio.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://cgymmy.github.io/sitemap.xml
