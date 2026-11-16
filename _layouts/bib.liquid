@@ -32,12 +32,11 @@
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
             include figure.liquid
-            loading="eager"
+            loading="lazy"
             path=entry_path
-            sizes = "200px"
+            sizes="180px"
             class="preview z-depth-1 rounded"
-            zoomable=true
-            alt=entry.preview
+            alt=entry.title
           %}
         {% endif %}
       {% endif %}
@@ -181,6 +180,9 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.summary %}
+      <p class="paper-summary">{{ entry.summary | escape }}</p>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

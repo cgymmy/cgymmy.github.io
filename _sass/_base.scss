@@ -730,6 +730,18 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
+        display: block;
+        width: 100%;
+        max-width: 180px;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+      }
+
+      .paper-summary {
+        color: var(--global-text-color-light);
+        font-size: 0.9rem;
+        line-height: 1.45;
+        margin: 0.4rem 0 0.5rem;
       }
 
       .abbr {
